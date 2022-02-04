@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //import mongoose
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/sharing_session')
+mongoose.connect('mongodb+srv://test-api:test123@cluster0.rp1dz.mongodb.net/sharing_session?retryWrites=true&w=majority')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
